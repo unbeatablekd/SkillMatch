@@ -5,4 +5,3 @@ docx2txt
 PyMuPDF
 pdfkit
 reportlab
-en_core_web_sm
