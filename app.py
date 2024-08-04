@@ -117,4 +117,4 @@ def view_resume(file_name):
     return send_file(os.path.join(resume_dir, file_name))
 
 if __name__ == '__main__':
-    app.run("localhost", 9999, debug=True)
+    app.run(host='0.0.0.0', port=9999, debug=True)
