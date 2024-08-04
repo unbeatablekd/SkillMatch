@@ -5,3 +5,4 @@ docx2txt
 PyMuPDF
 pdfkit
 reportlab
+gunicorn==20.1.0
