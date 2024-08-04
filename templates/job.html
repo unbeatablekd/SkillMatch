@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillMatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/job.css">
+</head>
+
+<body>
+  <!-- <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+            width="26">
+            <path
+              d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+          </svg></a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <button class="btn">Login</button>
+      <button class="btn">Signup</button>
+    </ul>
+    <ul>
+      <li><a href="/" style="font-size: 32px; 
+        
+        background: -webkit-linear-gradient(#40ad6b, #15251b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+      
+       ">SkillMatch</a></li>      <li class="hideOnMobile"><a href="">Post Job </a></li>
+      <li class="hideOnMobile"><a href="#">Login</a></li>
+      <li class="hideOnMobile"><a href="#">Signup</a></li>
+
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+            viewBox="0 96 960 960" width="26">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+          </svg></a></li>
+    </ul>
+  </nav> -->
+
+  <div class="container">
+    <div class="apply_box" style="margin-bottom: 50px;">
+      <h2 style="text-align: center;">JOB DESCRIPTION</h2>
+
+      <form id="job-form" action="/predict" method="post">
+        <div class="form_container">
+          <div class="textarea_control">
+            <label for="Job_Description"></label>
+            <textarea id="Job_Description" name="jd" rows="15" cols="25"
+              placeholder="Enter Job Description"></textarea>
+          </div>
+        </div>
+        <div class="button_container">
+          <button type="submit" onclick="myFun()">Post Job</button>
+        </div>
+      </form>
+    </div>  
+
+    <div class="job-carousels" style="display: flex; justify-content: center;align-items: center;flex-wrap: wrap;">
+    </div>
+
+
+
+
+    <script>
+      function myFun(){
+        window.location.href = '/predict';
+      }
+
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    <script src="/static/script.js">
+
+    </script>
+</body>
+
+</html>

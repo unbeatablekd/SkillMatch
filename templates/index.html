@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillMatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+            width="26">
+            <path
+              d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+          </svg></a></li>
+      <li><a href="/job">Post Job</a></li>
+      <button class="btn">Login</button>
+      <button class="btn">Signup</button>
+    </ul>
+    <ul>
+      <li><a href="/" style="font-size: 32px; 
+        
+        background: -webkit-linear-gradient(#51db88, #15251b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+      
+       ">SkillMatch</a></li>
+      <li class="hideOnMobile"><a href="/job" style="color: #15251b">Post Job</a></li>
+      <li class="hideOnMobile"><a href="#"></a></li>
+      <!-- <li class="hideOnMobile"><a href="#">Signup</a></li> -->
+
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+            viewBox="0 96 960 960" width="26">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+          </svg></a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+
+    <div class="info">
+      <h1 class="linear-wipe">Discover Your Dream Team: Where Job Descriptions Find Their Perfect Match!</h1>
+      <h3>""Revolutionizing Hiring: Our Platform Empowers Companies to Effortlessly Discover and Connect with Their
+        Ideal Candidates, Matching Job Descriptions with Top Talent."</h3>
+      <button id="postJobButton">Post new job</button>
+
+    </div>
+    <div class="image">
+      <img src="/static/img/hire.png" alt="img">
+    </div>
+
+
+  </div>
+
+
+  <!-- carousal section started -->
+
+
+  </div>
+
+
+
+
+
+  <script>
+    document.getElementById("postJobButton").addEventListener("click", function () {
+      window.location.href = "/job";
+    });
+
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+// const h3 = document.createElement('h3');
+// h3.textContent = `Job Role: ${jobData.Job_Role}`;
+// card.appendChild(h3);
+// h3.style.fontSize = "18px";
+// h3.style.marginTop = "12px";
+// h3.style.fontWeight = "bold"; // Set the fontWeight property to bold
+
+// const p1 = document.createElement('p');
+// p1.textContent = `Work Experience : ${jobData.Work_Experience}`;
+// card.appendChild(p1);
+// p1.style.marginTop = "12px";
+// p1.style.fontWeight = "bold"; // Set the fontWeight property to bold
+
+
+// const p2 = document.createElement('p');
+// p2.textContent = `Salary Offered : ${jobData.Salary_Offered}`;  // Access salary data
+// card.appendChild(p2);
+// p2.style.marginTop = "12px";
+// p2.style.fontWeight = "bold"; // Set the fontWeight property to bold
+
+
+// const p3 = document.createElement('p');
+// p3.textContent = `Skills : ${jobData.Skills}`;
+// card.appendChild(p3);
+// p3.style.marginTop = "12px";
+// p3.style.fontWeight = "bold"; // Set the fontWeight property to bold
+
+
+// const p4 = document.createElement('p');
+// p4.textContent = `Certification/Bootcamp : ${jobData.Certification}`;
+// card.appendChild(p4);
+// p4.style.marginTop = "12px";
+// p4.style.fontWeight = "bold"; // Set the fontWeight property to bold -->
