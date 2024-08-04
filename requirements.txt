@@ -1,1 +1,7 @@
 spacy == 3.7.4
+Flask
+spacy
+scikit-learn
+docx2txt
+PyMuPDF
+pdfkit
